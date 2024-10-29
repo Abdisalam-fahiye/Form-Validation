@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f9faf9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 2em;
+    border-radius: 5px;
+}
+h1{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+label,
+input{
+    font-size: 18px;
+    display: block;
+    margin-top: 10px;
+}
+input{
+    padding: .5em .5em;
+    width: 100%;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid grey;
+}
+
+.form-control{
+    position: relative;
+}
+.form-control i.bx-check{
+    position: absolute;
+    right: 10px;
+    top: 38px;
+    font-size: 23px;
+    color: #31ca15;
+    visibility: hidden;
+}
+.form-control i.bx-window-close{
+    position: absolute;
+    right: 10px;
+    top: 38px;
+    font-size: 23px;
+    color: #ec5a36;
+    visibility: hidden;
+}
+.form-control small{
+    color: #ec5a36;
+    display: block;
+    visibility: hidden;
+}
+input:focus{
+    border: solid 1px #1b1c22;
+}
+
+input[type="submit"]{
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+input[type="submit"]:hover{
+    opacity: .85;
+}
+
+
+
+.form-control.success input{
+    border: 1px solid #31ca15;
+}
+
+.form-control.error input{
+    border: 1px solid #ec5a36;
+}
+
+/* .form-control.success small{
+    visibility: visible;
+} */
+.form-control.error small{
+    visibility: visible;
+}
